@@ -33,7 +33,7 @@ today = datetime.date.today()
 st.subheader("How are your feeling today?")
 
 # Create dropdown for mood selection
-mood = st.selectbox("Select your mood", ["Happy", "Sad", "Angry", "Neutral", "Excited"])
+mood = st.selectbox("Select your mood", ["Happy", "Sad", "Angry", "Neutral", "Excited", "Fear"])
 
 # Create button to save mood
 if st.button("Log Mood"):

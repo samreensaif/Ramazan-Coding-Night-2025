@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Khushboo",
+        "author": "Parveen shakir",
+        "year": "1995",
+        "genre": "poetry",
+        "is_read": true
+    },
+    {
+        "title": "meri kahani",
+        "author": "samreen",
+        "year": 2020,
+        "genre": "thrill",
+        "is_read": false,
+        "read": true
+    }
+]

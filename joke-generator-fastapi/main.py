@@ -1,8 +1,5 @@
 from fastapi import FastAPI
 import random
-
-
-
 app = FastAPI()
 
 random_jokes = [
@@ -20,14 +17,9 @@ random_jokes = [
     { "setup": "Wife: Main 3 din se tumse baat nahi kar rahi!", "punchline": "Husband: Allah ka shukar, battery charge ho gayi!"},
     { "setup": "Policeman: Tum is waqt raat ko kya kar rahe ho?", "punchline": "Aadmi: Light nahi hai, hawa khanay nikla hoon!"},
     { "setup": "Husband: Mujhe ghar ke kaam nahi karne aate!", "punchline": "Wife: Chalo phir training start karte hain!"},
-    { "setup": "Biwi: Tum mujhe pyar nahi karte!", "punchline": "Shohar: Pyar karta hoon lekin bijli ka bill bhi bharna hota hai!"},
     { "setup": "Doctor: Kya masla hai?", "punchline": "Patient: Sir, battery full likha aata hai, phir bhi garmi lagti hai!"},
     { "setup": "Bachay: Abbu, hamari car hybrid hai?", "punchline": "Abbu: Beta, hybrid nahi, load-shedding wali hai!"}
 ]
-
-
-        
-
 
 @app.get("/random-jokes")
 

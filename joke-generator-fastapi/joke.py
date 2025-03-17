@@ -1,9 +1,6 @@
 import streamlit as st
 import requests
 
-
-
-
 api_url = "http://127.0.0.1:8000/random-jokes"
 
 st.set_page_config(page_title="Joke Generator", page_icon="😂", layout="wide")
@@ -23,7 +20,24 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-if st.button("Generate Joke"):
+st.markdown(
+    """
+    <style>
+        .center-btn {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Create a container for centering
+col1, col2, col3 = st.columns([1, 3, 1])  # Middle column is wider for centering
+with col2:  # Middle column for the button
+    generate_joke = st.button("😂 Generate Joke 😂")
+
+if generate_joke:
 
     response = requests.get(api_url)
     if response.status_code == 200:

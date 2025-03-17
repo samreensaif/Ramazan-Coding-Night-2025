@@ -2,7 +2,7 @@
     {
         "title": "Khushboo",
         "author": "Parveen shakir",
-        "year": "1995",
+        "year": 2000,
         "genre": "poetry",
         "is_read": true
     },
@@ -13,5 +13,12 @@
         "genre": "thrill",
         "is_read": false,
         "read": true
+    },
+    {
+        "title": "waqt",
+        "author": "sam",
+        "year": "2024",
+        "genre": "poetry",
+        "is_read": true
     }
 ]
